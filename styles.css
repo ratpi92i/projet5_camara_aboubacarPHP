@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hero {
+  background-image: url("images/vue.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero1 {
+  background-image: url("images/bobo1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero2 {
+  background-image: url("images/ouaga.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero3 {
+  background-image: url("images/banfora.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero5 {
+  background-image: url("images/services.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero6 {
+  background-image: url("images/contact.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+
+  animation: moveText 12s linear infinite;
+}
+
+/* @keyframes moveText {
+  0% {
+      transform: translateX(100%); 
+  }
+  100% {
+      transform: translateX(-100%); 
+  }
+} */
+
+.hero-content h1:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 1.2em;
+}
+.ville {
+  padding: 5% 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.ville > img {
+  width: 500px;
+  height: 330px;
+  object-fit: cover;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ville .infos .bouton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.ville .infos .bouton:hover {
+  background-color: #45a049;
+}
+
+.tourist-sites {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.site-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tourist-site {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.tourist-site img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .ville {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ville > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .infos {
+    margin-top: 20px;
+  }
+}
+
+.prin {
+  text-align: center;
+  margin-top: 50px;
+}
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1% 5%;
+}
+
+.services .item {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.services .item > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.services .item > h2 {
+  text-align: center;
+}
+
+@media (max-width: 300px) {
+  .hero-content > h1 {
+    font-size: 24px;
+    animation: none;
+  }
+}
